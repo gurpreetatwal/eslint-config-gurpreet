@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gurpreet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ESLint config based that extends XO",
   "license": "MIT",
   "repository": "gurpreetatwal/eslint-config-gurpreet",
@@ -8,12 +8,14 @@
   "scripts": {
     "test": "ava"
   },
-  "keywords": ["eslint"],
+  "keywords": [
+    "eslint"
+  ],
   "dependencies": {
     "eslint": "^2.12.0",
     "eslint-config-xo": "^0.15.2"
   },
-    "devDependencies": {
+  "devDependencies": {
     "ava": "*",
     "eslint": "^2.7.0",
     "is-plain-obj": "^1.0.0",
