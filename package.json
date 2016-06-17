@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-gurpreet",
+  "version": "0.1.0",
+  "description": "ESLint config based that extends XO",
+  "license": "MIT",
+  "repository": "gurpreetatwal/eslint-config-gurpreet",
+  "author": "Gurpreet Atwal<gurpreetatwal@users.noreply.github.com>",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": ["eslint"],
+  "dependencies": {
+    "eslint": "^2.12.0",
+    "eslint-config-xo": "^0.15.2"
+  },
+    "devDependencies": {
+    "ava": "*",
+    "eslint": "^2.7.0",
+    "is-plain-obj": "^1.0.0",
+    "temp-write": "^2.0.1"
+  }
+}
