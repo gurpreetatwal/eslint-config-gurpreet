@@ -33,6 +33,9 @@ test(t => {
   t.true(isPlainObj(conf.rules));
 
   const errors = runEslint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
+
   t.is(errors[0].ruleId, 'semi');
-  t.is(errors[1].ruleId, 'space-before-function-paren');
+  t.is(errors[1].ruleId, 'newline-after-var');
+  t.is(errors[2].ruleId, 'func-names');
+  t.is(errors[3].ruleId, 'space-before-function-paren');
 });
