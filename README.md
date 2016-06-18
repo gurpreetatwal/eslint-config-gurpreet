@@ -1,4 +1,4 @@
-# Gurpreet's ESLint Config [![Build Status](https://travis-ci.org/gurpreetatwal/eslint-config-gurpreet.svg?branch=master)](https://travis-ci.org/gurpreetatwal/eslint-config-gurpreet)
+# Gurpreet's ESLint Config [![Build Status](https://img.shields.io/travis/gurpreetatwal/eslint-config-gurpreet.svg?style=flat-square)](https://travis-ci.org/gurpreetatwal/eslint-config-gurpreet)
 
 > Extends [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo)<br>
 > Test file is from [eslint-config-google](https://github.com/google/eslint-config-google/) 
