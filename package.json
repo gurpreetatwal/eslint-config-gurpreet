@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gurpreet",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ESLint config based that extends XO",
   "license": "MIT",
   "repository": "gurpreetatwal/eslint-config-gurpreet",
