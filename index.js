@@ -16,7 +16,6 @@ module.exports = {
       'ignore': [0, 1],
       'enforceConst': true
     }],
-    'vars-on-top': 'warn',
     'yoda': ['error', 'never', { 'exceptRange': true }],
     'callback-return': ['error', ['cb', 'callback', 'next', 'done']],
     'global-require': 'warn',
