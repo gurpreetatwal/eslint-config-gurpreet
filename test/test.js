@@ -13,29 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import {join} from 'path';
 import test from 'ava';
 import isPlainObj from 'is-plain-obj';
 import tempWrite from 'temp-write';
 import eslint from 'eslint';
 import conf from '../';
 
-function runEslint(str, conf) {
+function runEslint(str) {
   const linter = new eslint.CLIEngine({
-    useEslintrc: false,
-    configFile: tempWrite.sync(JSON.stringify(conf))
-  });
+    configFile: join(process.cwd(), 'index.js'),
+ });
 
   return linter.executeOnText(str).results[0].messages;
 }
 
-test(t => {
+test('sanity check', t => {
   t.true(isPlainObj(conf));
   t.true(isPlainObj(conf.rules));
 
-  const errors = runEslint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
+  const errors = runEslint(`'use strict'\nvar foo = function () {};\nfoo();\n`);
 
   t.is(errors[0].ruleId, 'semi');
   t.is(errors[1].ruleId, 'newline-after-var');
-  t.is(errors[2].ruleId, 'func-names');
-  t.is(errors[3].ruleId, 'space-before-function-paren');
+  t.is(errors[2].ruleId, 'space-before-function-paren');
 });
