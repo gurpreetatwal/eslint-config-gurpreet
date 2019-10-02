@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "ava": "^2.1.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.5.1",
     "is-plain-obj": "^2.0.0",
     "temp-write": "^4.0.0"
   }
