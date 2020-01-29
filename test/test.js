@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {join} from 'path';
-import test from 'ava';
-import isPlainObj from 'is-plain-obj';
-import tempWrite from 'temp-write';
-import eslint from 'eslint';
-import conf from '../';
+const {join} = require('path');
+const test = require('ava');
+const isPlainObj = require('is-plain-obj');
+const tempWrite = require('temp-write');
+const eslint = require('eslint');
+const conf = require('../');
 
 function runEslint(str) {
   const linter = new eslint.CLIEngine({
     configFile: join(process.cwd(), 'index.js'),
- });
+  });
 
   return linter.executeOnText(str).results[0].messages;
 }
 
-test('sanity check', t => {
+test('sanity check', (t) => {
   t.true(isPlainObj(conf));
   t.true(isPlainObj(conf.rules));
 
